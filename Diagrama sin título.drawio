@@ -1,9 +1,95 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="Página-1" id="1LYLHZM-U1lLEGVNWVHj">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-106" value="Usuarios" style="swimlane;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="200" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-107" value="id (PK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-106">
+          <mxGeometry x="10" y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-108" value="nombre (VARCHAR 100)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-106">
+          <mxGeometry x="10" y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-109" value="email (VARCHAR 100)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-106">
+          <mxGeometry x="10" y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-110" value="identificacion (VARCHAR 20)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-106">
+          <mxGeometry x="10" y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-111" value="telefono (VARCHAR 20)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-106">
+          <mxGeometry x="10" y="150" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-112" value="ciudad (VARCHAR 100)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-106">
+          <mxGeometry x="10" y="180" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-113" value="Solicitudes_Examen" style="swimlane;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="300" y="10" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-114" value="id (PK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry x="10" y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-115" value="usuario_id (FK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry x="10" y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-116" value="examen_id (FK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry x="10" y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-117" value="estado_id (FK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry x="10" y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-118" value="Examenes" style="swimlane;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="560" y="10" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-119" value="id (PK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-118">
+          <mxGeometry x="10" y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-120" value="nombre_examen (VARCHAR 100)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-118">
+          <mxGeometry x="10" y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-121" value="Estados_Solicitud" style="swimlane;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="30" y="300" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-122" value="id (PK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-121">
+          <mxGeometry x="10" y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-123" value="nombre (VARCHAR 50)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-121">
+          <mxGeometry x="10" y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-124" value="Resultados" style="swimlane;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="560" y="290" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-125" value="id (PK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-124">
+          <mxGeometry x="10" y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-126" value="solicitud_id (FK, INT)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-124">
+          <mxGeometry x="10" y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-127" value="fecha (DATETIME)" vertex="1" parent="JbzFv98bgaVhpH8aMW0P-124">
+          <mxGeometry x="10" y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-128" edge="1" parent="1" source="JbzFv98bgaVhpH8aMW0P-106" target="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-129" edge="1" parent="1" source="JbzFv98bgaVhpH8aMW0P-118" target="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-130" edge="1" parent="1" source="JbzFv98bgaVhpH8aMW0P-121" target="JbzFv98bgaVhpH8aMW0P-113">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JbzFv98bgaVhpH8aMW0P-131" edge="1" parent="1" source="JbzFv98bgaVhpH8aMW0P-113" target="JbzFv98bgaVhpH8aMW0P-124">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
